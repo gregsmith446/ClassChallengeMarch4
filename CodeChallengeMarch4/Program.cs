@@ -11,8 +11,6 @@ namespace CodeChallengeMarch4
             int result = dropTheBall.bouncingBall(3, 0.66, 1.5);
 
             // int result = dropTheBall.bouncingBall(3, 1, 1.5);
-
-            Console.WriteLine(result);
         }
              
         public class BouncingBall
@@ -25,17 +23,14 @@ namespace CodeChallengeMarch4
 
                 if (h < 0)
                 {
-                    Console.WriteLine("height invalid");
                     return total;
                 }
                 else if (window >= h)
                 {
-                    Console.WriteLine("window height invalid");
                     return total;
                 }
                 else if (bounce <= 0 || bounce >= 1)
                 {
-                    Console.WriteLine("bounce rate invalid");
                     return total;
                 }
                 // count how many times the ball passed by window
